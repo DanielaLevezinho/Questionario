@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+  <meta charset="UTF-8">
+  <title>Questionário</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+
+<body>
+  <header>
+    <h1>Questionário</h1>
+    <h2>Google Images</h2>
+  </header>
+
+  <h3>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</h5>
+
+    <form id="formTask" name="task1" method="POST" onsubmit="validateForm(formTask)" action="General_Evaluation.html">
+      <section id="tarefa1">
+        <fieldset>
+          <legend> Tarefa 1 - Explorar o website </legend>
+
+          <br>
+
+          <p>
+            Explore o website livremente durante alguns minutos de modo a ficar mais familiarizado com
+            as funcionalidades do website.
+          </p>
+
+
+          <h3>7 - Indique se encontrou algum erro ou se sentiu alguma dificuldade em perceber as
+            funcionalidades principais do website.</h3>
+
+          <input class="textareaTasks" id="qual" type="textarea" name="q7" />
+          <br>
+        </fieldset>
+      </section>
+      <br>
+      <br>
+      <section id="tarefa2">
+        <fieldset>
+          <legend> Tarefa 2 - Pesquisar imagens </legend>
+
+          <p>
+            Escolha a opção de <strong>pesquisa por palavra chave</strong>, selecione uma categoria
+            à sua escolha e
+            observe os resultados. Repita a pesquisa com outras categorias.
+          </p>
+
+          <h3>8 - Como classifica os resultados obtidos pela pesquisa por categoria(1 significa "Maus"
+            e 5 significa "Excelentes")?*</h3>
+
+          <div id="pergunta_8" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q8">
+                <span class="ratingResultado">Maus</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q8">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q8" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q8">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q8">
+                <span class="ratingResultado">Excelentes</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+
+            <!-- <button type="button" class="btn btn-secondary" onclick="butoes(pergunta_8, 0)">1</button>
+                          <button type="button" class="btn btn-secondary" onclick="butoes(pergunta_8, 1)">2</button>
+                          <button type="button" class="btn btn-secondary" onclick="butoes(pergunta_8, 2)">3</button>
+                          <button type="button" class="btn btn-secondary" onclick="butoes(pergunta_8, 3)">4</button>
+                          <button type="button" class="btn btn-secondary" onclick="butoes(pergunta_8, 4)">5</button>
+                         -->
+          </div>
+
+          <br>
+          <h3>9 - Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?</h3>
+
+          <input class="textareaTasks" id="qual" type="textarea" name="q9" />
+
+          <br>
+          <br>
+          <p>
+            Escolha a opção de <strong>pesquisa por cor dominante</strong>, selecione uma cor à sua
+            escolha e
+            observe os resultados.Repita a pesquisa com outras cores.
+          </p>
+
+          <h3>10 - Como classifica os resultados obtidos pela pesquisa por cor(1 significa "Maus" e 5
+            significa "Excelentes")?*</h3>
+          <div id="pergunta_10" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q10">
+                <span class="ratingResultado">Maus</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q10">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q10" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q10">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q10">
+                <span class="ratingResultado">Excelentes</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+          <br>
+
+          <h3>11 - Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+          </h3>
+          <input class="textareaTasks" id="qual" type="textarea" name="q11" />
+
+          <br>
+          <br>
+
+          <p>
+            Escolha a opção de <strong>pesquisa por imagem semelhante</strong>, selecione uma imagem
+            à sua escolha e
+            observe os resultados.
+          </p>
+
+          <h3>12 - Como classifica os resultados obtidos pela pesquisa por imagem semelhante(1
+            significa "Maus" e 5 significa "Excelentes")?*</h3>
+          <div id="pergunta_12" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q12">
+                <span class="ratingResultado">Maus</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q12">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q12" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q12">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q12">
+                <span class="ratingResultado">Excelentes</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+          <br>
+
+          <h3>13 - Como classifica a utilidade da pesquisa por Imagens Semelhantes(1 significa "Maus"
+            e 5 significa "Excelentes")?*</h3>
+          <div id="pergunta_13" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q13">
+                <span class="ratingResultado">Maus</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q13">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q13" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q13">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q13">
+                <span class="ratingResultado">Excelentes</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+          <br>
+
+          <h3>14 - Que dificuldades encontrou para realizar a pesquisa e visualizar os resultados?
+          </h3>
+          <input class="textareaTasks" id="qual" type="textarea" name="q14" />
+
+          <h3>15 - Qual o tipo de pesquisa que acha mais adequado?</h3>
+          <input class="textareaTasks" id="qual" type="textarea" name="q15" />
+
+
+          <br>
+          <br>
+          <p>
+            * Questões de resposta obrigatória.
+          </p>
+          <br>
+          <button class="anterior" type="button" onclick="goBack(formTask, 'Caracterization.html')">Página
+            Anterior</button>
+          <div id="next">
+            <input class="proximo" id="sub" type="submit" name="submit" value="Próxima Página">
+          </div>
+
+    </form>
+
+    </fieldset>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="js/form_manager.js"></script>
+    <script>window.onload = initializeValues(formTask)</script>
+</body>
+
+</html>

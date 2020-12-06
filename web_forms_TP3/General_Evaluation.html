@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+  <meta charset="UTF-8">
+  <title>Avaliação</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Avaliação</h1>
+  </header>
+
+  <h3>Por favor, responda às seguintes questões para avaliar a sua experiência de utilização e a
+    usabilidade do website.</h5>
+
+    <section id="tarefa1">
+      <form id="formGen" name="task1" method="POST" onsubmit="validateForm(formGen)" action="Respostas.html">
+        <fieldset>
+
+          <legend> Experiência de utilização </legend>
+          <br>
+          <h3>16 - Para cada par de adjetivos, selecione a opção que melhor descreve a sua experiência de
+            utilização deste website:</h3>
+          <div>
+
+            <ul class="buttonClass16">
+
+              <span class="ratingAvaliacao">Fantástica</span>
+              <label class="pergunta16">
+                <input id="b1Input" value="1" type="radio" name="q16a">
+                <span id="b1" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b2Input" value="2" type="radio" name="q16a">
+                <span id="b2" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b3Input" value="3" type="radio" name="q16a">
+                <span id="b3" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b4Input" value="4" type="radio" name="q16a">
+                <span id="b4" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b5Input" value="5" type="radio" name="q16a">
+                <span id="b5" class="radio16"></span>
+              </label>
+              <span class="ratingAvaliacao">Horrível</span>
+
+            </ul>
+
+            <ul class="buttonClass16">
+
+              <span class="ratingAvaliacao">Estimulante</span>
+              <label class="pergunta16">
+                <input id="b1Input" value="1" type="radio" name="q16b">
+                <span id="b1" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b2Input" value="2" type="radio" name="q16b">
+                <span id="b2" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b3Input" value="3" type="radio" name="q16b">
+                <span id="b3" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b4Input" value="4" type="radio" name="q16b">
+                <span id="b4" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b5Input" value="5" type="radio" name="q16b">
+                <span id="b5" class="radio16"></span>
+              </label>
+              <span class="ratingAvaliacao">Aborrecida</span>
+
+            </ul>
+
+            <ul class="buttonClass16">
+
+              <span class="ratingAvaliacao">Gratificante</span>
+              <label class="pergunta16">
+                <input id="b1Input" value="1" type="radio" name="q16c">
+                <span id="b1" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b2Input" value="2" type="radio" name="q16c">
+                <span id="b2" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b3Input" value="3" type="radio" name="q16c">
+                <span id="b3" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b4Input" value="4" type="radio" name="q16c">
+                <span id="b4" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b5Input" value="5" type="radio" name="q16c">
+                <span id="b5" class="radio16"></span>
+              </label>
+              <span class="ratingAvaliacao">Frustrante</span>
+
+            </ul>
+
+            <ul class="buttonClass16">
+
+              <span class="ratingAvaliacao">Fácil</span>
+              <label class="pergunta16">
+                <input id="b1Input" value="1" type="radio" name="q16d">
+                <span id="b1" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b2Input" value="2" type="radio" name="q16d">
+                <span id="b2" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b3Input" value="3" type="radio" name="q16d">
+                <span id="b3" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b4Input" value="4" type="radio" name="q16d">
+                <span id="b4" class="radio16"></span>
+              </label>
+
+              <label class="pergunta16">
+                <input id="b5Input" value="5" type="radio" name="q16d">
+                <span id="b5" class="radio16"></span>
+              </label>
+              <span class="ratingAvaliacao">Díficil</span>
+
+            </ul>
+
+          </div>
+
+          <br>
+
+
+          <p>
+            <strong>
+              SUS - System Usability Scale
+            </strong>
+          </p>
+          <p>
+            <strong>
+              Para recolher as respostas é utilizada uma escala do tipo Likert com 5 opções de escolha (1
+              significa “Discorda completamente” e 5 significa “Concorda completamente”).
+            </strong>
+          </p>
+
+          <br>
+
+          <h3>17 - Acho que gostaria de utilizar este website com frequência. *</h3>
+          <div id="pergunta_17" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q17">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q17">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q17" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q17">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q17">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>18 - Considerei o website mais complexo do que necessário.*</h3>
+          <div id="pergunta_18" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q18">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q18">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q18" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q18">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q18">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>19 - Achei o website fácil de utilizar.*</h3>
+          <div id="pergunta_19" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q19">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q19">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q19" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q19">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q19">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>20 - Acho que necessitaria de ajuda de um técnico para conseguir utilizar este website.*</h3>
+          <div id="pergunta_20" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q20">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q20">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q20" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q20">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q20">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>21 - Considerei que as várias funcionalidades deste website estavam bem integradas.*</h3>
+          <div id="pergunta_21" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q21">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q21">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q21" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q21">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q21">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>22 - Achei que este website tinha muitas inconsistências.*</h3>
+          <div id="pergunta_22" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q22">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q22">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q22" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q22">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q22">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>23 - Suponho que a maioria das pessoas aprenderia a utilizar rapidamente este website.*</h3>
+          <div id="pergunta_23" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q23">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q23">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q23" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q23">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q23">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>24 - Considerei o website muito complicado de utilizar.*</h3>
+          <div id="pergunta_24" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q24">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q24">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q24" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q24">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q24">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>25 - Senti-me muito confiante a utilizar este website.*</h3>
+          <div id="pergunta_25" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q25">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q25">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q25" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q25">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q25">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <h3>26 - Tive que aprender muito antes de conseguir lidar com este website.*</h3>
+          <div id="pergunta_26" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <ul class="buttonClass">
+
+              <label class="containerRadio">
+                <input id="b1Input" value="1" type="radio" name="q26">
+                <span class="ratingResultado">Discorda Completamente</span>
+                <span id="b1" class="radio">1</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b2Input" value="2" type="radio" name="q26">
+                <span id="b2" class="radio">2</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b3Input" value="3" type="radio" name="q26" required>
+                <span id="b3" class="radio">3</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b4Input" value="4" type="radio" name="q26">
+                <span id="b4" class="radio">4</span>
+              </label>
+
+              <label class="containerRadio">
+                <input id="b5Input" value="5" type="radio" name="q26">
+                <span class="ratingResultado">Concorda Completamente</span>
+                <span id="b5" class="radio">5</span>
+              </label>
+
+            </ul>
+          </div>
+
+          <br>
+
+          <p>
+            Obrigado pela sua colaboração!
+          </p>
+          <p>
+            * Questões de resposta obrigatória.
+          </p>
+
+          <br>
+
+
+
+
+          <button class="anterior" type="button" onclick="goBack(formGen, 'Tasks.html')">Página Anterior</button>
+          <div id="next">
+            <input class="proximo" id="sub" type="submit" name="submit" value="Submeter">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/form_manager.js"></script>
+    <script>window.onload = initializeValues(formGen)</script>
+</body>
+
+</html>
