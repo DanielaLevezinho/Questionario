@@ -80,6 +80,10 @@ function initializeValues(formName, id = "") {
       jQuery(".textarea").prop("required", true);
       jQuery(".textarea").prop("disabled", false);
     }
+    else{
+      jQuery(".textarea").prop("required", false);
+      jQuery(".textarea").prop("disabled", true);
+    }
   }
 }
 
